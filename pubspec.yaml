@@ -4,4 +4,13 @@ environment:
   sdk: '>=2.0.0-dev.22.0 <3.0.0'
 
 dependencies:
+  kernel: any
   discoveryapis_generator: '>=0.9.1 <0.10.0'
+
+dependency_overrides:
+  kernel:
+    path: ../sdk-gclient/sdk/pkg/kernel
+  front_end:
+    path: ../sdk-gclient/sdk/pkg/front_end
+  analyzer:
+    path: ../sdk-gclient/sdk/pkg/analyzer
